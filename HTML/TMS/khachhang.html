@@ -1,0 +1,342 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>TINYERP</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+  <link rel="shortcut icon" href="/favicon.ico">
+
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+  <!-- page level plugin styles -->
+  <link rel="stylesheet" href="styles/climacons-font.css">
+  <link rel="stylesheet" href="vendor/rickshaw/rickshaw.min.css">
+  <link rel="stylesheet" href="vendor/datatables/media/css/jquery.dataTables.css">
+  <!-- /page level plugin styles -->
+
+  <!-- build:css({.tmp,app}) styles/app.min.css -->
+  <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="vendor/perfect-scrollbar/css/perfect-scrollbar.css">
+  <link rel="stylesheet" href="styles/roboto.css">
+  <link rel="stylesheet" href="styles/font-awesome.css">
+  <link rel="stylesheet" href="styles/panel.css">
+  <link rel="stylesheet" href="styles/feather.css">
+  <link rel="stylesheet" href="styles/animate.css">
+  <link rel="stylesheet" href="styles/urban.css">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/urban.skins.css">
+  <!-- endbuild -->
+
+</head>
+
+<body>
+
+
+  <div class="app layout-fixed-header">
+
+    <!-- sidebar panel -->
+    <div class="sidebar-panel offscreen-left">
+
+      <div class="brand">
+
+        <!-- logo -->
+        <div class="brand-logo">
+          <!-- <img src="images/logo.png" height="15" alt=""> -->
+          <a href="">ABC INC</a>
+        </div>
+        <!-- /logo -->
+
+        <!-- toggle small sidebar menu -->
+        <a href="javascript:;" class="toggle-sidebar hidden-xs hamburger-icon v3" data-toggle="layout-small-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+        <!-- /toggle small sidebar menu -->
+
+      </div>
+
+      <!-- main navigation -->
+      <nav role="navigation">
+
+        <ul class="nav">
+
+
+
+          <li>
+           <a href="receviceorder.html">
+            <i class="fa fa-tint"></i>
+            <span>Nhận thông tin khách hàng</span>
+          </a>
+        </li>
+        <li>
+         <a href="receviceorder.html">
+          <i class="fa fa-tag"></i>
+          <span>Khách Hàng</span>
+        </a>
+      </li>
+      <li>
+       <a href="receviceorder.html">
+        <i class="fa fa-ticket"></i>
+        <span>Đơn hàng</span>
+      </a>
+    </li>
+    <!-- /ui -->
+
+  </ul>
+</nav>
+<!-- /main navigation -->
+
+</div>
+<!-- /sidebar panel -->
+
+
+<!-- content panel -->
+<div class="main-panel">
+
+  <!-- top header -->
+  <header class="header navbar">
+
+    <div class="brand visible-xs">
+      <!-- toggle offscreen menu -->
+      <div class="toggle-offscreen">
+        <a href="#" class="hamburger-icon visible-xs" data-toggle="offscreen" data-move="ltr">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+      </div>
+      <!-- /toggle offscreen menu -->
+
+      <!-- logo -->
+      <div class="brand-logo">
+        <img src="images/logo-dark.png" height="15" alt="">
+      </div>
+      <!-- /logo -->
+
+      <!-- toggle chat sidebar small screen-->
+      <div class="toggle-chat">
+        <a href="javascript:;" class="hamburger-icon v2 visible-xs" data-toggle="layout-chat-open">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+      </div>
+      <!-- /toggle chat sidebar small screen-->
+    </div>
+
+    <ul class="nav navbar-nav hidden-xs">
+      <li>
+        <p class="navbar-text">
+          Dashboard
+        </p>
+      </li>
+    </ul>
+
+    <ul class="nav navbar-nav navbar-right hidden-xs">
+
+
+
+      <li>
+        <a href="javascript:;" data-toggle="dropdown">
+          <img src="images/avatar.jpg" class="header-avatar img-circle ml10" alt="user" title="user">
+          <span class="pull-left">Nguyen Nhut Truong</span>
+        </a>
+        <ul class="dropdown-menu">
+          <li>
+            <a href="javascript:;">Settings</a>
+          </li>
+
+          <li>
+            <a href="signin.html">Logout</a>
+          </li>
+        </ul>
+
+      </li>
+    </ul>
+  </header>
+  <!-- /top header -->
+
+  <!-- main area -->
+  <div class="main-content">
+
+    <div class="panel-heading border">
+        <span class="bol"><strong>Thông tin khách hàng</strong></span>
+    </div>
+
+
+
+
+    <div class="panel-body">
+      
+
+      <div class="search active">
+      <div class=" row form-search">
+        <div class="col-lg-6 active">
+          <div class="col-sm-3">
+            <!-- <button type="button" class="form-control btn btn-default">Thêm</button> -->
+            <a class="btn btn-default form-control" role="button">Thêm</a>
+          </div>
+          <div class="col-sm-9">
+            <div class="input-group mb15">
+              <input type="text" class="form-control br0"  id="" name="" required="true"  >
+              <span class="input-group-btn">
+                <button class="btn btn-info" type="button">Tìm kiếm</button>
+              </span>
+            </div>
+            
+          </div>
+          
+
+        </div>
+      </div>
+
+      </div>
+
+    <table id="example" class="table table-striped table-bordered" cellspacing="0" width="100%">
+      <thead>
+        <tr class="info">
+          <th>Mã đơn vị</th>
+          <th>Tên</th>
+          <th>Người đại diện</th>
+          <th>Địa chỉ</th>
+          <th>Điện thoại</th>
+          <th>Website</th>
+          <th>Thư điện tử</th>
+          <th>Phiên bản</th>
+          <th>Hành động</th>
+        </tr>
+      </thead>
+     <!--  <tfoot>
+        <th>Mã đơn vị</th>
+        <th>Tên</th>
+        <th>Người đại diện</th>
+        <th>Địa chỉ</th>
+        <th>Điện thoại</th>
+        <th>Website</th>
+        <th>Thư điện tử</th>
+        <th>Phiên bản</th>
+        <th></th>
+      </tfoot> -->
+      <tbody>
+        <tr ">
+          <td><a href="">cF105</a></td>
+          <td>Một thành viên dịch vụ công ích</td>
+          <td>Nguyễn Văn A</td>
+          <td>65 Bà Hom, Phường 9, Quận Tản đà Hà Nội</td>
+          <td>0977372125</td>
+          <td>http://thongminh.com.vn</td>
+          <td>abc@thongminh.com</td>
+          <td>0</td>
+          <td class="text-center">
+            <div class="input-group-btn">
+              <button type="button" class="btn btn-success dropdown-toggle btn-sm" data-toggle="dropdown">
+                <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu pull-right">
+                <li>
+                  <a href="receviceorder.html">
+                    <i class="fa fa-edit"></i>
+                    <span>Sửa</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="receviceorder.html">
+                    <i class="fa fa-remove"></i>
+                    <span>Xóa</span>
+                  </a>
+                </li>
+                <li>
+                 <a href="receviceorder.html">
+                  <i class="fa fa-plus"></i>
+                  <span>Thêm đơn hàng</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="receviceorder.html">
+                  <i class="fa fa-building"></i>
+                  <span>Xem đơn hàng</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          </td>
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- /main area -->
+</div>
+
+<!-- /content panel -->
+
+<!-- bottom footer -->
+<footer class="content-footer">
+  <nav class="footer-right">
+    <ul class="nav">
+      <li>
+        <a href="javascript:;">Feedback</a>
+      </li>
+      <li>
+        <a href="javascript:;" class="scroll-up">
+          <i class="fa fa-angle-up"></i>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <nav class="footer-left">
+    <ul class="nav">
+      <li>
+        <a href="javascript:;">Copyright <i class="fa fa-copyright"></i> <span>abc</span> 2017. All rights reserved</a>
+      </li>
+
+    </ul>
+  </nav>
+
+</footer>
+<!-- /bottom footer -->
+
+
+</div>
+
+<!-- build:js({.tmp,app}) scripts/app.min.js -->
+<script src="scripts/extentions/modernizr.js"></script>
+<script src="vendor/jquery/dist/jquery.js"></script>
+<script src="vendor/bootstrap/dist/js/bootstrap.js"></script>
+<script src="vendor/jquery.easing/jquery.easing.js"></script>
+<script src="vendor/fastclick/lib/fastclick.js"></script>
+<script src="vendor/onScreen/jquery.onscreen.js"></script>
+<script src="vendor/jquery-countTo/jquery.countTo.js"></script>
+<script src="vendor/perfect-scrollbar/js/perfect-scrollbar.jquery.js"></script>
+<script src="scripts/ui/accordion.js"></script>
+<script src="scripts/ui/animate.js"></script>
+<script src="scripts/ui/link-transition.js"></script>
+<script src="scripts/ui/panel-controls.js"></script>
+<script src="scripts/ui/preloader.js"></script>
+<script src="scripts/ui/toggle.js"></script>
+<script src="scripts/urban-constants.js"></script>
+<script src="scripts/extentions/lib.js"></script>
+
+<script src="vendor/datatables/media/js/jquery.dataTables.js"></script>
+
+<script src="scripts/extentions/bootstrap-datatables.js"></script>
+<script src="scripts/pages/datatables.js"></script>
+<script type="text/javascript">
+
+  $(document).ready(function() {
+    $('#example').DataTable();
+  } );
+
+</script>
+
+</body>
+
+</html>

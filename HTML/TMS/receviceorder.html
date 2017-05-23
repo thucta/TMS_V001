@@ -1,0 +1,583 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>TINYERP</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+  <link rel="shortcut icon" href="/favicon.ico">
+
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+  <!-- page level plugin styles -->
+  <link rel="stylesheet" href="styles/climacons-font.css">
+  <link rel="stylesheet" href="vendor/rickshaw/rickshaw.min.css">
+  <!-- /page level plugin styles -->
+
+  <!-- build:css({.tmp,app}) styles/app.min.css -->
+  <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="vendor/perfect-scrollbar/css/perfect-scrollbar.css">
+  <link rel="stylesheet" href="styles/roboto.css">
+  <link rel="stylesheet" href="styles/font-awesome.css">
+  <link rel="stylesheet" href="styles/panel.css">
+  <link rel="stylesheet" href="styles/feather.css">
+  <link rel="stylesheet" href="styles/animate.css">
+  <link rel="stylesheet" href="styles/urban.css">
+  <link rel="stylesheet" href="styles/urban.skins.css">
+  <!-- endbuild -->
+
+</head>
+
+<body>
+
+
+  <div class="app layout-fixed-header">
+
+    <!-- sidebar panel -->
+    <div class="sidebar-panel offscreen-left">
+
+      <div class="brand">
+
+        <!-- logo -->
+        <div class="brand-logo">
+          <!-- <img src="images/logo.png" height="15" alt=""> -->
+          <a href="">ABC INC</a>
+        </div>
+        <!-- /logo -->
+
+        <!-- toggle small sidebar menu -->
+        <a href="javascript:;" class="toggle-sidebar hidden-xs hamburger-icon v3" data-toggle="layout-small-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+        <!-- /toggle small sidebar menu -->
+
+      </div>
+
+      <!-- main navigation -->
+      <nav role="navigation">
+
+        <ul class="nav">
+
+          <li>
+             <a href="receviceorder.html">
+              <i class="fa fa-tint"></i>
+              <span>Nhận thông tin khách hàng</span>
+            </a>
+          </li>
+          <li>
+           <a href="khachhang.html">
+            <i class="fa fa-tag"></i>
+            <span>Khách Hàng</span>
+          </a>
+        </li>
+        <li>
+         <a href="donhang.html">
+          <i class="fa fa-ticket"></i>
+          <span>Đơn hàng</span>
+          </a>
+        </li>
+      <!-- /ui -->
+
+        </ul>
+      </nav>
+      <!-- /main navigation -->
+
+</div>
+<!-- /sidebar panel -->
+
+
+<!-- content panel -->
+<div class="main-panel">
+
+  <!-- top header -->
+  <header class="header navbar">
+
+    <div class="brand visible-xs">
+      <!-- toggle offscreen menu -->
+      <div class="toggle-offscreen">
+        <a href="#" class="hamburger-icon visible-xs" data-toggle="offscreen" data-move="ltr">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+      </div>
+      <!-- /toggle offscreen menu -->
+
+      <!-- logo -->
+      <div class="brand-logo">
+        <img src="images/logo-dark.png" height="15" alt="">
+      </div>
+      <!-- /logo -->
+
+      <!-- toggle chat sidebar small screen-->
+      <div class="toggle-chat">
+        <a href="javascript:;" class="hamburger-icon v2 visible-xs" data-toggle="layout-chat-open">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+      </div>
+      <!-- /toggle chat sidebar small screen-->
+    </div>
+
+    <ul class="nav navbar-nav hidden-xs">
+      <li>
+        <p class="navbar-text">
+          Dashboard
+        </p>
+      </li>
+    </ul>
+
+    <ul class="nav navbar-nav navbar-right hidden-xs">
+
+
+
+      <li>
+        <a href="javascript:;" data-toggle="dropdown">
+          <img src="images/avatar.jpg" class="header-avatar img-circle ml10" alt="user" title="user">
+          <span class="pull-left">Nguyen Nhut Truong</span>
+        </a>
+        <ul class="dropdown-menu">
+          <li>
+            <a href="javascript:;">Settings</a>
+          </li>
+
+          <li>
+            <a href="signin.html">Logout</a>
+          </li>
+        </ul>
+
+      </li>
+    </ul>
+  </header>
+  <!-- /top header -->
+
+  <!-- main area -->
+  <div class="main-content">
+    <div class="panel-body">
+      <div class="row no-margin">
+        <div class="col-lg-12">
+
+          <!-- Form nhap thong tin khach hang -->
+          <form class="form-horizontal " role="form">
+           <div class="panel-heading " >
+             <span class="bol"><strong>Thông tin khách hàng</strong></span>
+           </div>
+           <div class="row">
+             <div class="col-lg-6">
+              <div class="form-group">
+                <label class="col-sm-3 control-label">Tên đơn vị <span class="">*</span></label>
+                <div class="col-sm-9">
+
+
+                  <div class="input-group mb15">
+                    <input type="text" class="form-control br0"  id="" name="" required="true"  >
+                    <span class="input-group-btn">
+                      <button class="btn btn-info" type="button">Tìm kiếm</button>
+                    </span>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="form-group">
+                <label class="col-sm-3 control-label">Mã đơn vị <span class="">*</span></label>
+                <div class="col-sm-9">
+                  <!-- <input type="text" class="form-control"> -->
+                  <input type="text" name="" id="" class="form-control" value="" required="required" title="">
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="form-group">
+                <label class="col-sm-3 control-label">Loại hình doanh nghiệp </label>
+                <div class="col-sm-9">
+
+                  <select class="form-control">
+                    <option>Văn phòng đại diện doanh nghiệp nước ngoài</option>
+                    <option>Văn phòng đại diện doanh nghiệp nước ngoài</option>
+                    <option>Văn phòng đại diện doanh nghiệp nước ngoài</option>
+                    <option>Văn phòng đại diện doanh nghiệp nước ngoài</option>
+                    <option>Văn phòng đại diện doanh nghiệp nước ngoài</option>
+                    <option>Văn phòng đại diện doanh nghiệp nước ngoài</option>
+                  </select>
+
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="form-group">
+                <label class="col-sm-3 control-label">Lĩnh vực hoạt động</label>
+                <div class="col-sm-9">
+
+                  <select class="form-control">
+                    <option>Thiết kế tính toán mô phỏng</option>
+                    <option>Thiết kế tính toán mô phỏng</option>
+                    <option>Thiết kế tính toán mô phỏng</option>
+                    <option>Thiết kế tính toán mô phỏng</option>
+                    <option>Thiết kế tính toán mô phỏng</option>
+                  </select>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="form-group">
+                <label class="col-sm-3 control-label">Địa chỉ</label>
+                <div class="col-sm-9">
+                  <!-- <input type="text" class="form-control"> -->
+                  <input type="text" name="" id="" class="form-control" value="" required="required" title="">
+
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="form-group">
+                <label class="col-sm-3 control-label">Người đại diện</label>
+                <div class="col-sm-9">
+
+                  <input type="text" name="" id="" class="form-control" value=""  placeholder="Người đại diện">
+
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="form-group">
+                <label class="col-sm-3 control-label">Mã số thuế</label>
+                <div class="col-sm-9">
+                  <!-- <input type="text" class="form-control"> -->
+                  <input type="number" min="0" name="" id="" class="form-control" value="" placeholder="Mã số thuế">
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="form-group">
+                <label class="col-sm-3 control-label">Chức danh</label>
+                <div class="col-sm-9">
+
+                  <input type="text" name="" id="" class="form-control" value=""  placeholder="Chức danh">
+
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="form-group">
+                <label class="col-sm-3 control-label">Điện thoại</label>
+                <div class="col-sm-9">
+                  <input type="number" min="0" name="" id="" class="form-control" value="" placeholder="(+84) 988 123 456">
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="form-group">
+                <label class="col-sm-3 control-label">Thư điện tử</label>
+                <div class="col-sm-9">
+                  <input type="email" name="" id="" class="form-control" value=""  placeholder="abcxyz@gmail.com">
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="form-group">
+                <label class="col-sm-3 control-label">Di động</label>
+                <div class="col-sm-9">
+                  <input type="number" min="0" name="" id="" class="form-control" value="" placeholder="(+84) 988 123 456">
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="form-group">
+                <label class="col-sm-3 control-label">Trang web</label>
+                <div class="col-sm-9">
+
+                  <input type="text" name="" id="" class="form-control" value=""  placeholder="http://abc.com">
+
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="form-group">
+                <label class="col-sm-3 control-label">Fax</label>
+                <div class="col-sm-9">
+                  <input type="number" min="0" name="" id="" class="form-control" value="" placeholder="888 988 123 456">
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6">
+
+            </div>
+            <div class="col-lg-6 text-right">
+              <a class="btn btn-primary" role="button">Lưu thông tin khách hàng</a>
+            </div>
+            
+          </div>
+          <hr>
+        </form>
+        <!--  End Form nhap thong tin khach hang -->
+
+
+
+
+        <!-- Form nhap thong tin đơn hang -->
+        <form class="form-horizontal bordered-group" role="form">
+         <div class="panel-heading ">
+           <span><strong>Thông tin đơn hàng</strong></span>
+         </div>
+
+         <div class="row">
+           <div class="col-lg-12">
+            <div class="form-group">
+              <label class="col-sm-2 control-label">Người tiếp nhận<span class="">*</span></label>
+              <div class="col-sm-4">
+
+
+                <input type="text" name="" id="" class=" col-sm-5 form-control" value="" required="required" title="">
+
+              </div>
+              <label class="col-sm-2 control-label">Ngày khởi tạo <span class="">*</span></label>
+              <div class="col-sm-4">
+                <input type="date" name="" id="" class=" col-sm-5 form-control" value="" required="required" title="">
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row">
+        <div class="col-lg-12">
+            <div class="form-group">
+              <label class="col-sm-2 control-label ">Tên đơn hàng <span>*</span></label>
+              <div class="col-sm-4">
+
+                <input type="text" name="" id="" class="form-control" value="" required="required" placeholder="Tên đơn hàng" title="">
+
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        
+        
+
+
+
+
+        <div class="row">
+          <div class="col-lg-12">
+
+           <div class="form-group">
+            <label class="col-sm-2 control-label">Nội dung yêu cầu</label>
+            <div class="col-sm-10">
+
+             <textarea class="form-control" rows="5"></textarea>
+
+           </div>
+         </div>
+
+       </div>
+
+     </div>
+
+
+
+     <div class="row">
+      <div class="col-lg-12">
+        <div class="form-group">
+          <label class="col-sm-2 control-label ">Thời gian hoàn tất</label>
+          <div class="col-sm-4">
+            <input type="date" name="" id="" class="form-control" value="" >
+          </div>
+           <div class="col-sm-6">
+            <input type="text" name="" id="" class="form-control" value="" placeholder="Ghi chú">
+          </div>
+        </div>
+      </div>
+      
+  </div>
+
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="form-group">
+        <label class="col-sm-2 control-label ">Số lượng</label>
+        <div class="col-sm-4">
+          <input type="text" name="" id="" class="form-control" placeholder="Số lượng" value="" >
+        </div>
+        <div class="col-sm-6">
+          <input type="text" name="" id="" class="form-control" placeholder="Đơn vị tính" value="" >
+        </div>
+      </div>
+    </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-12">
+    <div class="form-group">
+      <label class="col-sm-2 control-label ">Yêu cầu thêm</label>
+      <div class="col-sm-10">
+        <table class="table table-bordered table-hover">
+         <thead>
+           <tr>
+             <th width="10%"></th>
+             <th width="45%">Thuộc tính</th>
+             <th width="45%">Giá Trị</th>
+           </tr>
+         </thead>
+         <tbody>
+           <tr>
+             <td>1</td>
+             <td></td>
+             <td></td>
+           </tr>
+           <tr>
+             <td>2</td>
+             <td></td>
+             <td></td>
+           </tr>
+           <tr>
+             <td>3</td>
+             <td></td>
+             <td></td>
+           </tr>
+           <tr>
+             <td>4</td>
+             <td></td>
+             <td></td>
+           </tr>
+         </tbody>
+       </table>
+
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+<div class="row">
+   <div class="col-lg-12">
+    <div class="form-group">
+      <label class="col-sm-2 control-label">File input</label>
+      <div class="col-sm-10">
+        <input type="file">
+      </div>
+    </div>
+   </div>
+
+</div>
+
+<div class="row text-center">
+   <a class="btn btn-primary " role="button">Lưu</a>
+    <a class="btn btn-default " role="button">Trở về</a>
+</div>
+
+</form>
+<!-- End form them thong tin don hang -->
+
+
+
+</div>
+</div>
+</div>
+</div>
+
+<!-- /main area -->
+</div>
+
+<!-- /content panel -->
+
+<!-- bottom footer -->
+<footer class="content-footer">
+  <nav class="footer-right">
+    <ul class="nav">
+      <li>
+        <a href="javascript:;">Feedback</a>
+      </li>
+      <li>
+        <a href="javascript:;" class="scroll-up">
+          <i class="fa fa-angle-up"></i>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <nav class="footer-left">
+    <ul class="nav">
+      <li>
+        <a href="javascript:;">Copyright <i class="fa fa-copyright"></i> <span>abc</span> 2017. All rights reserved</a>
+      </li>
+
+    </ul>
+  </nav>
+
+</footer>
+<!-- /bottom footer -->
+
+
+</div>
+
+<!-- build:js({.tmp,app}) scripts/app.min.js -->
+<script src="scripts/extentions/modernizr.js"></script>
+<script src="vendor/jquery/dist/jquery.js"></script>
+<script src="vendor/bootstrap/dist/js/bootstrap.js"></script>
+<script src="vendor/jquery.easing/jquery.easing.js"></script>
+<script src="vendor/fastclick/lib/fastclick.js"></script>
+<script src="vendor/onScreen/jquery.onscreen.js"></script>
+<script src="vendor/jquery-countTo/jquery.countTo.js"></script>
+<script src="vendor/perfect-scrollbar/js/perfect-scrollbar.jquery.js"></script>
+<script src="scripts/ui/accordion.js"></script>
+<script src="scripts/ui/animate.js"></script>
+<script src="scripts/ui/link-transition.js"></script>
+<script src="scripts/ui/panel-controls.js"></script>
+<script src="scripts/ui/preloader.js"></script>
+<script src="scripts/ui/toggle.js"></script>
+<script src="scripts/urban-constants.js"></script>
+<script src="scripts/extentions/lib.js"></script>
+<!-- endbuild -->
+
+<!-- page level scripts -->
+<script src="vendor/d3/d3.min.js"></script>
+<script src="vendor/rickshaw/rickshaw.min.js"></script>
+<script src="vendor/flot/jquery.flot.js"></script>
+<script src="vendor/flot/jquery.flot.resize.js"></script>
+<script src="vendor/flot/jquery.flot.categories.js"></script>
+<script src="vendor/flot/jquery.flot.pie.js"></script>
+<!-- /page level scripts -->
+
+<!-- initialize page scripts -->
+<script src="scripts/pages/dashboard.js"></script>
+<!-- /initialize page scripts -->
+
+</body>
+
+</html>
